@@ -19,9 +19,9 @@ export default function Form(props) {
     /*Add New Member Form*/
     <div className="border p-3 m-2 shadow-md w-3/4 rounded bg-custBeige">
       <h1 className="text-custBlue text-4xl">Add New Member</h1>
-      <div className="border p-3 m-2 mb-0.5 shadow-md rounded bg-custBeige">
+      <div className="w-1/2 p-3 m-2 mb-0.5 rounded bg-custBeige">
         <form onSubmit={handleSubmit} className="flex flex-col">
-          <label>
+          <label className="label">
             First Name:{" "}
             <input
               value={props.values.fname}
@@ -32,7 +32,7 @@ export default function Form(props) {
               onChange={handleChange}
             />
           </label>
-          <label>
+          <label className="label">
             Last Name:{" "}
             <input
               value={props.values.lname}
@@ -43,7 +43,7 @@ export default function Form(props) {
               onChange={handleChange}
             />
           </label>
-          <label>
+          <label className="label">
             Email:{" "}
             <input
               value={props.values.email}
@@ -54,7 +54,7 @@ export default function Form(props) {
               onChange={handleChange}
             />
           </label>
-          <label>
+          <label className="label">
             Role:{" "}
             <input
               value={props.values.role}
